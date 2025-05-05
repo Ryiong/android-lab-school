@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:stretchColumns="1" android:shrinkColumns="0"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TableRow>
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_span="2"
+            android:text="TÍNH CHỈ SỐ BMI "
+            android:textAlignment="center"
+            android:textColor="#E91E63"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="123dp"
+            android:layout_height="wrap_content"
+            android:text="Nhập tên: " />
+
+        <EditText
+            android:id="@+id/etHoTen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Họ và tên"
+            android:inputType="textPersonName"
+            android:textSize="20sp" />
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chiều cao(m): " />
+
+        <EditText
+            android:id="@+id/etChieuCao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Chiều cao"
+            android:inputType="numberDecimal"
+            android:textSize="20sp" />
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cân nặng(kg): " />
+
+        <EditText
+            android:id="@+id/etCanNang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Cân nặng"
+            android:inputType="numberDecimal"
+            android:textSize="20sp" />
+    </TableRow>
+    <TableRow>
+        <Button
+            android:id="@+id/btnClear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="XOÁ"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="normal"
+            android:onClick="clearAllInputs"
+            />
+        <Button
+            android:id="@+id/btnCalculateBMI"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TÍNH CHỈ SỐ BMI "
+            android:textAlignment="center" android:textSize="24sp"
+            android:textStyle="normal"
+            android:onClick="calculateBMI"/>
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BMI = "
+            />
+
+        <EditText
+            android:id="@+id/etBMI"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="BMI"
+            android:inputType="numberDecimal"
+            android:textSize="20sp" />
+    </TableRow>
+    <TableRow>
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chẩn đoán: " />
+
+        <EditText
+            android:id="@+id/etChuanDoan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Chẩn đoán"
+            android:inputType="numberDecimal"
+            android:textSize="20sp" />
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:id="@+id/textViewlk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_span="2" android:text="Lời khuyên của bác sĩ "
+            android:textAlignment="center"
+            android:textColor="#673AB7"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </TableRow>
+    <TableRow>
+
+        <TextView
+            android:id="@+id/tvLoiKhuyen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_span="2"
+            android:text="Xin chào..."
+            android:textAlignment="center"
+            android:textColor="#2196F3"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </TableRow>
+</TableLayout>
