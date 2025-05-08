@@ -25,7 +25,7 @@ class BT2 : AppCompatActivity() {
         setContentView(R.layout.activity_bt2)
 
         editName = findViewById(R.id.editName)
-        editAge = findViewById(R.id.editYearofBirth)
+        editAge = findViewById(R.id.editAge)
         editHeight = findViewById(R.id.editHeight)
         editWeight = findViewById(R.id.editWeight)
         btnCalculate = findViewById(R.id.btnCalculate)

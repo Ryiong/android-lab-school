@@ -19,6 +19,9 @@
             android:name=".BT3"
             android:exported="false" />
         <activity
+            android:name=".BT2"
+            android:exported="false" />
+        <activity
             android:name=".BT1"
             android:exported="false" />
         <activity
