@@ -73,6 +73,22 @@ class BT4 : AppCompatActivity() {
             return
         }
 
+        // Simplified Lunar date conversion
+        // Assume Lunar calendar is ~10 days behind Gregorian
+        var lunarDay = day - 10
+        var lunarMonth = month
+        var lunarYear = year
+
+        // Adjust day and month if day becomes negative
+        if (lunarDay <= 0) {
+            lunarMonth -= 1
+            lunarDay += 30 // Assume 30 days per lunar month for simplicity
+            if (lunarMonth <= 0) {
+                lunarMonth += 12
+                lunarYear -= 1
+            }
+        }
+
         val can = when (year % 10) {
             0 -> "Canh"
             1 -> "Tân"
@@ -103,7 +119,7 @@ class BT4 : AppCompatActivity() {
             else -> ""
         }
 
-        textResult.text = "Lunar Date: $day/$month/$can $chi"
+        textResult.text = "Lunar Date: $lunarDay/$lunarMonth/$can $chi"
     }
 
     public fun clearInput() {
